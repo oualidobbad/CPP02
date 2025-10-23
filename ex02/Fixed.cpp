@@ -52,7 +52,6 @@ float Fixed::toFloat( void ) const{
 	return (float) this->value / (1 << fractBits);
 }
 
-
 //=============The 6 comparison operators: >, <, >=, <=, ==, and !=.=======================
 bool Fixed::operator>(const Fixed &obj) const{
 
@@ -105,7 +104,7 @@ Fixed Fixed::operator/(const Fixed &obj)
 { 	
 	Fixed copy;
 
-	copy.value = (this->value / obj.value) * 256;
+	copy.value = roundf((this->value / obj.value) * 256);
 	return copy;
 }
 
@@ -140,7 +139,6 @@ Fixed Fixed::operator--(int)
 //==================================static function============================
 Fixed Fixed::min(Fixed &obj1, Fixed &obj2)
 {
-
 	if (obj1 > obj2)
 		return obj2;
 	else
@@ -148,7 +146,6 @@ Fixed Fixed::min(Fixed &obj1, Fixed &obj2)
 }
 Fixed Fixed::min(const Fixed &obj1, const Fixed &obj2)
 {
-
 	if (obj1 > obj2)
 		return obj2;
 	else
@@ -168,4 +165,3 @@ Fixed Fixed::max(const Fixed &obj1, const Fixed &obj2)
 	else
 		return obj2;
 }
-
