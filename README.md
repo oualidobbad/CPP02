@@ -1,22 +1,13 @@
-# CPP02
+    # CPP02
 
-## Description
-C++ module implementing a fixed-point number class with operators.
+    C++ Module 02: fixed-point class implementation with operator overloading.
 
-## Features
-- Operator overloading and comparisons for fixed numbers.
+    ## Topics
+    - Orthodox Canonical Form, copy/assign.
+    - Operator overloads for arithmetic/comparisons on fixed numbers.
 
-## Technologies Used
-- C++98, Makefile.
+    ## Build & Run
+    - `make` in the module directory; run the sample main to see conversions and math.
 
-## Installation
-- Run `make` in the module directory.
-
-## Usage
-- Execute the built binary to see arithmetic demos.
-
-## Example
-- Add and compare two fixed-point values in the sample main.
-
-## Author
-- Oualid Obbad (@oualidobbad)
+    ## Author
+    Oualid Obbad (@oualidobbad)
